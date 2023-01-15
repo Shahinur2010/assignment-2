@@ -3,7 +3,11 @@
     display: flex;
     justify-content: space-around;
 }
-
+body{
+    font-family: Work Sans;
+    color:#757575;
+    padding: 50px 20px;
+}
 .heading {
     font-size: 32px;
     font-weight: 800;
@@ -15,6 +19,7 @@ nav ul {
     justify-content: space-between;
     gap: 40px;
     margin-top: 50px;
+    color: #131313;
 }
 
 nav li {
@@ -22,8 +27,7 @@ nav li {
 }
 
 /* <!-- architect group section--> */
-.banner,
-.footer {
+.banner, .footer {
     background: rgba(255, 144, 14, 0.1);
     text-align: center;
     margin-bottom: 20px;
@@ -31,6 +35,7 @@ nav li {
 .banner-title {
     font-size: 44px;
     font-weight: 900;
+    color: #131313;
     text-align: center;
     padding: 10px 400px;
 }
@@ -38,7 +43,7 @@ nav li {
     text-align: center;
     padding: 0 300px;
 }
-.btn-primary {
+.btn-primary{
     background: #FFFFFF;
     font-weight: 700;
     font-size: 20px;
@@ -70,6 +75,7 @@ nav li {
 .team-title{
     font-size: 36px;
     font-weight: 600;
+    color: #131313;
 }
 span {
    color: gray 
@@ -95,6 +101,7 @@ b{
 .feature-heading{
     font-size: 36px;
     font-weight: 800;
+    color: #131313;
     padding: 0 100px 0 10px;
 }
 .feature-body{
@@ -114,6 +121,7 @@ b{
 .feature-title {
     font-weight: 550;
     font-size: 20px;
+    color: #131313;
     margin-top: 10px;
 }
 .feature-details {
@@ -129,13 +137,13 @@ height:750px;
     font-weight: 700;
     font-size: 20px;
     border: 0;
-    padding: 18px 35px;
-    height: 90px;
+    padding: 30px 70px 30px;
+    height: 120px;
     background: #FD6E0A;
     border-radius: 5px;
     color: #FFFFFF;
     margin-left: 700px;
-    margin-top: -150px;
+    margin-top: -250px;
 }
 legend{
     font-size: 30px;
@@ -145,17 +153,18 @@ legend{
 .factors{
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
+    margin-top: 30px;
 }
 .factor-title{
     font-size: 36px;
     font-weight: 600;
+    color: #131313;
     margin-bottom: 10px;
 }
 .factor-description{
     font-size: 16px;
     font-weight: 100;
-    padding-right: 200px;
+    padding: 10px 800px 10px 2px;
     margin-bottom: 30px;
 }
 .container{
@@ -178,11 +187,11 @@ legend{
     background-color: blueviolet;
     transform: rotate(45deg);
 }
-
 /* sponsors section */
 .sponsors{
     font-size: 36px;
     font-weight: 800;
+    color: #131313;
     text-align: center;
 }
 .sponsors-info{
@@ -203,7 +212,70 @@ legend{
 .footer {
     font-weight: 400;
     font-size: 16px;
+    color: #131313;
     text-align: center;
     padding: 10px 50px 10px;
     margin: 10px 50px 10px ;
+}
+
+/* Mobile Responsive */
+
+@media  only screen and (max-width:668px) {
+    .header,
+    nav ul, 
+    .team-features, 
+    .features,
+    .container, 
+    .sponsors-image {
+        display: flex;
+        flex-direction: column;
+    }
+    .heading,
+    nav ul, 
+    .banner, 
+    .banner-description,
+    .box,
+    .btn-secondary,
+    .footer{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .team-image{
+    display: grid;
+    grid-template-columns:repeat(1, 1fr);
+    }
+    .banner-image, 
+    .team-image, 
+    .feature-image, 
+    .container, 
+    .sponsors-image{
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+body{
+    margin-left: 50px;
+    padding: 0;
+}
+.banner-title,
+.team-features,
+.team-quick-list,
+.feature-heading,
+.feature-title,
+.feature-body,
+.feature-box,
+.factor-description,
+.sponsors-info{
+    margin: 0;
+    padding: 0;
+}
+.banner{
+    height: 100%;
+    width: 100%;
+}
+.box,
+.btn-secondary{
+    margin-left: 50px;}
 }
